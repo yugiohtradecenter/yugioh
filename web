@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yu-Gi-Oh Trade Center</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #111;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Yu-Gi-Oh Trade Center</h1>
+    <p>Scambia le tue carte collezionabili con altri duellanti!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#login">Accedi</a>
+    <a href="#register">Registrati</a>
+    <a href="#cards">Le Tue Carte</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Benvenuto nel Yu-Gi-Oh Trade Center</h2>
+      <p>Crea un account, carica le tue carte e inizia a scambiarle con altri appassionati!</p>
+    </section>
+
+    <section id="login">
+      <h2>Accedi</h2>
+      <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Accedi">
+      </form>
+    </section>
+
+    <section id="register">
+      <h2>Registrati</h2>
+      <form>
+        <label for="username">Nome utente:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="reg_email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="reg_password" name="password"><br><br>
+        <input type="submit" value="Registrati">
+      </form>
+    </section>
+
+    <section id="cards">
+      <h2>Le Tue Carte da Scambiare</h2>
+      <div class="card-list">
+        <!-- Esempio di carta -->
+        <div class="card">
+          <img src="https://images.ygoprodeck.com/images/cards/46986414.jpg" alt="Dark Magician">
+          <h3>Mago Nero</h3>
+          <p>Livello 7 | ATK 2500 | DEF 2100</p>
+        </div>
+        <div class="card">
+          <img src="https://images.ygoprodeck.com/images/cards/89631139.jpg" alt="Blue-Eyes White Dragon">
+          <h3>Drago Bianco Occhi Blu</h3>
+          <p>Livello 8 | ATK 3000 | DEF 2500</p>
+        </div>
+        <!-- Altre carte caricate dagli utenti verranno mostrate qui -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yu-Gi-Oh Trade Center - Tutti i diritti riservati</p>
+  </footer>
+
+</body>
+</html>
